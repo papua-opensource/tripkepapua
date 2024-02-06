@@ -1,0 +1,26 @@
+{% load static tailwind_tags %}
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Django Project</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Tailwind CSS -->
+    {% tailwind_css %}
+  </head>
+  <body class="bg-gray-50 dark:bg-gray-800">
+    <!-- Main Content -->
+    {% block content %} {% endblock content %}
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
